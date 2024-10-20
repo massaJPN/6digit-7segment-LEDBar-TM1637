@@ -4,52 +4,41 @@ https://massa4649.booth.pm/items/6143269 の製品説明となります。
 ## 概要
 TM1637をLEDドライバーとした汎用的に使用できる6桁7セグメントLEDバーです。  
   
+![insert1](https://github.com/user-attachments/assets/d62ecd61-83be-493f-8317-529d72f48ef8)  
 
-## バリエーション  
-・基板のみ必要な方向けの【基板単品】と、必要部品をまとめた【部品キット】を準備しました。  
-完成形にする場合は、【基板単品】と【部品キット】の両方が必要です。  
+### 仕様  
+・サイズ：88mm × 22㎜ typ(突起部除く)  
+・動作電圧：5V(Typ)  
+・外部端子：CLOCK、DIO、VCC、GND  
+・搭載7セグメントLED：赤色、ドット付き(東芝製）  
+・搭載LEDドライバーIC：TM1637(TITAN MICRO ELECTRONICS)  
+・ピンヘッダー（L型 1x4)：１個同梱（未実装）  
 
-### 【基板単品】
-・両面基板仕様  １枚　サイズ(typ)：53.3 x 68.6 x 1.6 mm  
-![gaikan-30per](https://github.com/user-attachments/assets/4d004dea-707f-4d60-9945-f83406144a12)  
-
-### 【部品キット】
-・下記が同梱されています。  
-||部品名|個数|備考|
-|-----|-----|-----|-----|
-|1|7セグメントLED(右dot)|４個|HP5082-7760|
-|2|LEDドライバーIC|１個|TM1630|
-|3|タクトスイッチ|６個|6.5×4.5mmピッチ品|
-|4|６ピンソケット|１個|2.54mmピッチのピンソケット|
-|5|８ピンソケット|２個|2.54mmピッチのピンソケット|
-|6|１０ピンソケット|１個|2.54mmピッチのピンソケット|
-|7|ダイオード|６個|キー同時押し時のSEGピンショート防止用|
-|8|10k ohm 抵抗|３個|１６０８サイズ|  
-|9|100pFコンデンサ|３個|１６０８サイズ|  
-|10|1nFセラミックコンデンサ|１個|挿入タイプ|  
-|11|10uF電解コンデンサ|１個|挿入タイプ|  
-
-※オプション回路の８ピンソケット(J6)、３ピンヘッダ(J5)、ジャンパピン(J5用)、10kΩ抵抗×2個(R4,R5) はキットに含まれません。  
+![sunpouzu2-BW](https://github.com/user-attachments/assets/46414426-bff4-4f71-b595-2512450ec660)  
+  
 ※ロットにより、部品名称や色あい、細かいデザインや形が微妙に変わることがあります。  
 
 ## 回路図  
-![4DIGIT-7SEGーLED_TM1630](https://github.com/user-attachments/assets/7ca48a51-4511-45d0-821b-cdc8e82f12c8)
+![circuit](https://github.com/user-attachments/assets/39b5bd9e-6820-4d5a-8c89-0d59f00a4d8c)  
 
-2024年10月現在においては、TM1630は電子部品ショップの秋月電子さんでも販売されていますので、そちらのWEBサイトにデータシートがありますのでご参照下さい。  
+2024年10月現在においては、TM1637は電子部品ショップの秋月電子さんでも販売されていますので、そちらのWEBサイトにデータシートがありますのでご参照下さい。  
 TOPページ：https://akizukidenshi.com/catalog/c/c0/  
-販売コード：113223  
+販売コード：	116679  
 
 ## 動作確認
-・Arduino.ccサイトでリファレンス紹介されている”TM16xx LEDs and Buttons”ライブラリを使用して動作確認をしました。  
-サイト：https://reference.arduino.cc/reference/en/libraries/tm16xx-leds-and-buttons/  
-ただし、オリジナルでは、4桁の消去が上手くできなかったため、TM1630.cpp　ファイルの一部を下記の赤丸のように変更しました。  
+TM1637が使用されているSeeed社のGrove 4 Digit Displayのライブラリを参照して動作確認をしました。  
+ライブラリのインストール方法などはこちらをご参照下さい。  
+https://wiki.seeedstudio.com/Grove-4-Digit_Display/  
 
-![cppファイル-50per](https://github.com/user-attachments/assets/d07a6450-0f7e-4b05-9a49-de5a71972214)  
+ただし、オリジナルのGroveモジュールは4桁表示ですので、6桁に対応するような改造が必要です。  
+例としてNumberFlowでは以下のように改造します。  
+  
+![sampleprogram](https://github.com/user-attachments/assets/e0b282fa-5f44-48ce-9f28-e91b9e3470ee)  
 
 ### 動画  
 [![紹介動画]()](https://youtu.be/z4yhNrQsWkc)  
 
 ## 関連ブログ
-https://massa4649.com/tm1630_1/
+https://massa4649.com/6digits-7seg-display_1/  
 
 以上です。
