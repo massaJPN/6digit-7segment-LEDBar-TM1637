@@ -41,7 +41,7 @@ https://wiki.seeedstudio.com/Grove-4-Digit_Display/
 ![sampleprogram](https://github.com/user-attachments/assets/e0b282fa-5f44-48ce-9f28-e91b9e3470ee)  
 
 ### 動画  
-NumberFlowを動作させるとこのようになります。  
+NumberFlowを動作させた場合の動画をご紹介します。  
 　　
 [![紹介動画]()](https://youtu.be/z4yhNrQsWkc)  
 
