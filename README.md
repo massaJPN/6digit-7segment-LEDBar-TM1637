@@ -4,7 +4,7 @@ https://massa4649.booth.pm/items/6143269 の製品説明となります。
 ## 概要
 TM1637をLEDドライバーとした汎用的に使用できる6桁7セグメントLEDバーです。  
   
-![insert1](https://github.com/user-attachments/assets/d62ecd61-83be-493f-8317-529d72f48ef8)  
+![insert1-30per](https://github.com/user-attachments/assets/d60c0bd2-3fb8-4f34-a25b-a707be49f322)
 
 ### 仕様  
 ・サイズ：88mm × 22㎜ typ(突起部除く)  
