@@ -1,4 +1,4 @@
-# 6digit-7segment-LEDBar-TM1637-  
+# 6digit-7segment-LEDBar-TM1637  
 https://massa4649.booth.pm/items/6143269 の製品説明となります。  
 
 ## 概要
